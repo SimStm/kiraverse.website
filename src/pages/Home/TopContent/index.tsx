@@ -16,7 +16,7 @@ const TopContent: FC = (props) => {
   const [content, setContent] = useState('')
 
   return (
-    <main className="mx-auto max-w-8xl py-60 bg-top">
+    <main className="mx-auto max-w-8xl py-80 bg-top">
       <div className="text-center">
         <h1 className="font-logo tracking-tight sm:text-5xl md:text-4xl text-3xl">
           {title}

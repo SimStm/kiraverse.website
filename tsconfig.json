@@ -1,10 +1,32 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ESNext",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
+    ],
+    "paths": {
+      "@kira/components/*": [
+        "src/components/*"
+      ],
+      "@kira/pages/*": [
+        "src/pages/*"
+      ],
+      "@kira/helpers/*": [
+        "src/helpers/*"
+      ],
+      "@kira/constants/*": [
+        "src/constants/*"
+      ],
+      "@kira/assets/*": [
+        "src/assets/*"
+      ]
+    },
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/**/@types",
+      "*.d.ts"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -21,6 +43,8 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src/**/*.ts*",
+    "*.ts*",
+    "**/**.ts*"
   ]
 }

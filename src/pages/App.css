@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Avenir-Next-LT-Pro-Regular';
+  src: local('Avenir-Next-LT-Pro-Regular'), url(../assets/fonts/Avenir-Next-LT-Pro-Regular.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Avenir-Next-LT-Pro-Bold';
+  src: local('Avenir-Next-LT-Pro-Bold'), url(../assets/fonts/Avenir-Next-LT-Pro-Bold.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Kusanagi';
+  src: local('Kusanagi'), url(../assets/fonts/Kusanagi.woff) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+
+.font-button {
+  font-family: 'Avenir-Next-LT-Pro-Regular';
+  text-transform: uppercase;
+}
+
+.font-button-bold {
+  font-family: 'Avenir-Next-LT-Pro-Bold';
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.font-navigation, .font-logo {
+  font-family: 'Kusanagi';
+  text-transform: uppercase;
+}
+
+.purple-500 { color: #cb00ff }
+.purple-400 { color: rgb(160, 2, 233); }
+.purple-300 { color: rgb(99, 42, 166); }
+
+.bg-purple-500 { color: #cb00ff }
+.bg-purple-400 { background-color: rgb(160, 2, 233); }
+.bg-purple-300 { background-color: rgb(99, 42, 166); }

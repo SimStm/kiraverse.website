@@ -20,7 +20,7 @@ const TopContent: FC = (props) => {
         <h1 className="font-kusanagi uppercase tracking-tight sm:text-5xl md:text-4xl text-3xl">
           {title}
         </h1>
-        <p className="mx-auto mt-3 max-w-md text-base sm:text-lg md:mt-5 md:max-w-3xl md:text-2xl text-xl font-avenirBold uppercase">
+        <p className="mx-auto mt-3 max-w-md text-base sm:text-lg md:mt-5 md:max-w-3xl md:text-2xl text-xl font-bold uppercase">
           {subtitle}
         </p>
         <div className="mx-auto mt-5 sm:w-1/3 sm:justify-center md:mt-5">

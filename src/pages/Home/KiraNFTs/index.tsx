@@ -70,6 +70,7 @@ const KiraNFTs: FC = (props) => {
             justifyContent
             titleSize="xl"
             contentSize="base"
+            translucid
           >
             {item.content}
           </Card>

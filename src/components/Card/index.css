@@ -7,3 +7,7 @@
 .box-border-base .box-content {
     background-color: rgb(23, 1, 41)
 }
+
+.box-border-base .box-content-opacity {
+    background-color: rgba(23, 1, 41, 0.85)
+}

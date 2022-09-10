@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "target": "ESNext",
     "lib": [
@@ -6,23 +7,6 @@
       "dom.iterable",
       "esnext"
     ],
-    "paths": {
-      "@kira/components/*": [
-        "src/components/*"
-      ],
-      "@kira/pages/*": [
-        "src/pages/*"
-      ],
-      "@kira/helpers/*": [
-        "src/helpers/*"
-      ],
-      "@kira/constants/*": [
-        "src/constants/*"
-      ],
-      "@kira/assets/*": [
-        "src/assets/*"
-      ]
-    },
     "typeRoots": [
       "node_modules/@types",
       "node_modules/**/@types",

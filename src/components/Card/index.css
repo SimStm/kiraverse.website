@@ -1,0 +1,9 @@
+.box-border-base {
+    background: linear-gradient(to right, rgba(160, 2, 233, 0.7),rgba(99, 42, 166, 0.4), rgba(160, 2, 233, 0.7),rgba(99, 42, 166, 0.4), rgba(160, 2, 233, 0.7));
+    border-radius: 0.5rem;
+    padding: 1px;
+}
+
+.box-border-base .box-content {
+    background-color: rgb(23, 1, 41)
+}

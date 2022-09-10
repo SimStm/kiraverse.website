@@ -10,8 +10,8 @@ const PageHome: FC = (props) => {
     <Fragment>
       <Header />
       <TopContent />
-      <KiraNFTs />
       <WhatIs />
+      <KiraNFTs />
     </Fragment>
   )
 }

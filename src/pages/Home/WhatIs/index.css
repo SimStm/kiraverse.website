@@ -1,0 +1,12 @@
+.bg-whatis {
+    background: linear-gradient(to right, rgba(18, 0, 40, 1), rgba(35, 0, 75, 1), rgba(18, 0, 40, 1));
+    color: white;
+}
+
+.whatis-white-bar {
+    background-image: url(../../../assets/images/WhatIsWhiteLine.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 2px;
+    height: 500px;
+}

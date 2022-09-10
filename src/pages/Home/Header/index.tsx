@@ -38,7 +38,7 @@ const Header: FC = (props) => {
         <div className="flex w-full items-center border-b border-indigo-500 py-6 lg:border-none">
           <div className="flex items-center w-full justify-between">
             <a href="#">
-                <span className="font-logo text-white text-xl">{titleName}</span>
+                <span className="font-kusanagi uppercase text-white text-xl">{titleName}</span>
             </a>
             <div className="ml-10 hidden space-x-8 lg:block">
               <HeaderNavigation navigation={navigation} />
@@ -77,7 +77,7 @@ const HeaderNavigation: FC<IHeaderNavigationProps> = ({
             <a
               key={index}
               href={link.href}
-              className="text-base font-medium text-white hover:text-indigo-50 font-navigation"
+              className="text-base font-medium text-white hover:text-indigo-50 font-kusanagi uppercase"
             >
               {link.name}
             </a>

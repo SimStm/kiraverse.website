@@ -3,22 +3,21 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Avenir-Next-LT-Pro-Regular';
+    font-family: 'Avenir-Next-LT-Pro';
     src: local('Avenir-Next-LT-Pro-Regular'), url(assets/fonts/Avenir-Next-LT-Pro-Regular.woff) format('woff');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
+    /* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
+    font-weight: normal;
   }
   
   @font-face {
-    font-family: 'Avenir-Next-LT-Pro-Bold';
+    font-family: 'Avenir-Next-LT-Pro';
     src: local('Avenir-Next-LT-Pro-Bold'), url(assets/fonts/Avenir-Next-LT-Pro-Bold.woff) format('woff');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
+    /* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
+    font-weight: bold;
   }
   
   @font-face {
     font-family: 'Kusanagi';
     src: local('Kusanagi'), url(assets/fonts/Kusanagi.woff) format('woff');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
+    /* other formats include: 'woff2', 'truetype, 'opentype', 'embedded-opentype', and 'svg' */
   }

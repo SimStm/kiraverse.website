@@ -25,7 +25,13 @@ const TopContent: FC = (props) => {
         </p>
         <div className="mx-auto mt-5 sm:w-1/3 sm:justify-center md:mt-5">
           <div className="rounded-md shadow">
-            <InputButton placeholder="" buttonTitle="Pre-register for alpha access" onClick={() => alert(content)} onChange={setContent} value={content} />
+            <InputButton
+              placeholder=""
+              buttonTitle="Pre-register for alpha access"
+              onClick={() => alert(content)}
+              onChange={setContent}
+              value={content}
+            />
           </div>
         </div>
       </div>

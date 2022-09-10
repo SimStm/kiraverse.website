@@ -16,7 +16,7 @@ const KiraNFTs: FC = (props) => {
   const [content, setContent] = useState('')
 
   return (
-    <main className="mx-auto max-w-8xl py-80 bg-kiranfts">
+    <main className="mx-auto max-w-8xl bg-kiranfts">
 
     <div className="bg-indigo background-color: transparent;">
       <div className="mx-auto max-w-2xl py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">

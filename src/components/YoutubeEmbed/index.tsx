@@ -1,8 +1,8 @@
 import './index.css'
 
-const YouTubeEmbed = ({ youtubeId }: { youtubeId: string }) => {
+const YouTubeEmbed = ({ youtubeId, extraClassName }: { youtubeId: string, extraClassName?: string }) => {
   return (
-    <div className="video div-yt-video">
+    <div className={'video div-yt-video '+(extraClassName ?? '')}>
       <iframe
         className="iframe-yt-video"
         src={`https://www.youtube.com/embed/${youtubeId}`}

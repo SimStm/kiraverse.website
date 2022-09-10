@@ -8,11 +8,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Avenir-Next-LT-Pro-Regular',...defaultTheme.fontFamily.sans],
-        // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-        kusanagi: ['Kusanagi'],
-        avenir: ['Avenir-Next-LT-Pro-Regular'],
-        avenirBold: ['Avenir-Next-LT-Pro-Bold']
+        sans: ['Avenir-Next-LT-Pro', 'Inter var', ...defaultTheme.fontFamily.sans],
+        avenir: ['Avenir-Next-LT-Pro'],
+        kusanagi: ['Kusanagi']
+      },
+      fontSize: {
+        '3.5xl': ['2.14rem', { lineHeight: '2.25rem' }],
+        '4.5xl': ['2.8rem', { lineHeight: 1 }]
       },
       colors: {
         'kira-purple': {

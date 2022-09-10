@@ -16,30 +16,29 @@ const KiraNFTs: FC = (props) => {
   const [content, setContent] = useState('')
 
   return (
-    <main className="mx-auto max-w-8xl py-80 bg-kiranfts">
-
-    <div className="bg-indigo background-color: transparent;">
-      <div className="mx-auto max-w-2xl py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
-
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          <span className="block">KIRA NFTS</span>
-          <hr></hr>
-        </h2>
-
-        <p className="mt-4 text-lg leading-6 text-indigo-200">
-          KIRA's genesis collection will consist of 10,001 NFTs that are created by world-re-
-          nowned artists Antoni and Marc Tudisco. KIRA Offers ingeniously crafted alien-like
-          humans delivered in 4K. Traits are algorithmically generated to deliver similar but
-          unique assets to the consumer. There are common, rare, and one-of-a-kind proper-
-          ties and assets.<br></br>Kira NFTs only carry artistic value and have no competitive impact On gameplay,
-          but there are a wide variety of benefits to be unlocked by holding one.
-        </p>
-          
-        
-       
+    <main className="mx-auto max-w-8xl bg-kiranfts">
+      <div className="bg-indigo background-color: transparent;">
+        <div className="mx-auto max-w-2xl py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold font-kusanagi tracking-tight text-white sm:text-4xl">
+            <span className="block pink-text-shadow">KIRA NFTS</span>
+          </h2>
+          <p className="text-xs"><br></br></p>
+            <hr></hr>
+          <p className="mt-4 text-lg text-xs leading-6 text-indigo-200">
+            KIRA's genesis collection will consist of 10,001 NFTs that are created by world-re-
+            nowned artists Antoni and Marc Tudisco. KIRA Offers ingeniously crafted alien-like
+            humans delivered in 4K. Traits are algorithmically generated to deliver similar but
+            unique assets to the consumer. There are common, rare, and one-of-a-kind proper-
+            ties and assets.<br></br>Kira NFTs only carry artistic value and have no competitive impact On gameplay,
+            but there are a wide variety of benefits to be unlocked by holding one.
+          </p> 
+        </div>
       </div>
-    </div>
 
+
+      <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+
+      </div>
     </main>
   )
 }

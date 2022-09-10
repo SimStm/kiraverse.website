@@ -26,7 +26,7 @@ const WhatIs: FC = (props) => {
       <div className="grid md:grid-cols-5 grid-rows-1 gap-4 mx-12 md:mx-36">
         <div className="text-center md:text-left md:col-span-2 md:mr-12 md:flex md:flex-col md:justify-between space-y-10">
           <div className="space-y-10">
-            <div className="font-kusanagi tracking-tight text-lg md:text-3.5xl">
+            <div className="font-kusanagi tracking-tight text-lg md:text-3.5xl pink-text-shadow">
               What is Kiraverse?
             </div>
             <div className="text-sm md:pl-3 md:pr-6 leading-relaxed text-justify">

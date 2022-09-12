@@ -16,21 +16,21 @@ export interface INavigationItem {
 }
 
 const Header: FC = (props) => {
+  const subscribeByEmail = () => {
+    alert('-- TBD --')
+  }
+  const titleName = 'KIRAVERSE'
   const navigation: INavigationItem[] = [
     {
       name: 'Alpha Sign Up',
       type: 'button',
-      onClick: () => {
-        alert('teste')
-      }
+      onClick: subscribeByEmail
     },
     { name: 'Home', href: '#' },
     { name: 'Play', href: '#' },
     { name: 'Collections', href: '#' },
     { name: 'Partners', href: '#' }
   ]
-
-  const titleName = 'KIRAVERSE'
 
   return (
     <header className="bg-black">

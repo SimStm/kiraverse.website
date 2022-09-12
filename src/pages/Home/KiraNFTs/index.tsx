@@ -17,15 +17,17 @@ const KiraNFTs: FC = (props) => {
 
   const contentCards = [
     {
+      colSize: 'col-span-3',
       title: 'Premium Access for Holders',
       content: `If you hold a KIRA NFT you will unlock features such as: Staking to earn
       $KIRA passively, NFT rental, free wager matches, free in-game skins,
       purchase/eam all characters and weapons, and get the option to have
       your NFT integrated as an in-game avatar. You'll also earn an additional
-      amount of SKIRA tokens for your gameplay compared to free players.`
+      amount of $KIRA tokens for your gameplay compared to free players.`
     },
 
     {
+      colSize: 'col-span-2',
       title: 'Basic Access',
       content: `Users who do not hold a KIRA NFT will only have
       access to a limited quantity of characters, weapons,
@@ -35,6 +37,7 @@ const KiraNFTs: FC = (props) => {
     },
 
     {
+      colSize: 'col-span-2',
       title: 'Rent-A-KIRA',
       content: `Our Kiraverse Marketplace will
       feature an NFT rental section. This
@@ -58,7 +61,7 @@ const KiraNFTs: FC = (props) => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-4 mx-12 md:mx-36">
+      <div className="grid md:grid-cols-7 grid-cols-1 gap-4 mx-12 md:mx-36">
         {contentCards.map((item, index) => (
           <Card
             key={index}
@@ -67,6 +70,7 @@ const KiraNFTs: FC = (props) => {
             justifyContent
             titleSize="xl"
             contentSize="base"
+            columnSize={item.colSize}
             translucid
           >
             {item.content}

@@ -14,6 +14,10 @@ const TopContent: FC = (props) => {
 
   const [content, setContent] = useState('')
 
+  const subscribeByEmail = () => {
+    alert('-- TBD --')
+  }
+
   return (
     <main className="mx-auto max-w-8xl py-80 bg-top">
       <div className="text-center">
@@ -28,7 +32,7 @@ const TopContent: FC = (props) => {
             <InputButton
               placeholder=""
               buttonTitle="Pre-register for alpha access"
-              onClick={() => alert(content)}
+              onClick={subscribeByEmail}
               onChange={setContent}
               value={content}
             />

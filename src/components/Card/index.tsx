@@ -7,14 +7,17 @@ export interface ICard {
   centerType?: 'none' | 'title' | 'all'
   titleSize?: 'lg' | 'xl' | '2xl' | '3xl'
   contentSize?: 'sm' | 'base' | 'lg'
+  columnSize?: 'col-span-1' | 'col-span-2' | 'col-span-3' | 'col-span-4' | 'col-span-5' | 'col-span-6' | 'col-span-7' | 'col-span-8' | 'col-span-9' | 'col-span-10'
   translucid?: boolean
   children?: React.ReactNode
+  extraClassName?: string
 }
 
 const ICard: FC<ICard> = (props) => {
-  const cardBackgroundStyle = `flex w-full rounded-lg p-4  ${props.translucid ? 'box-content-opacity' : 'box-content'}`
+  const cardStyle = `flex rounded-md shadow-sm box-border-base`
+  const cardBackgroundStyle = `flex w-full rounded-lg p-4 ${props.translucid ? 'box-content-opacity' : 'box-content'}`
   return (
-    <div className="flex rounded-md shadow-sm box-border-base">
+    <div className={`${cardStyle} ${props.columnSize}`}>
       <div className="relative flex flex-grow items-stretch focus-within:z-10">
         <div className={cardBackgroundStyle}>
           <CardContent {...props}/>

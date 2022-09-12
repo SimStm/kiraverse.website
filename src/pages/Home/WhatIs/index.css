@@ -8,5 +8,10 @@
     background-repeat: no-repeat;
     background-size: auto;
     width: 2px;
-    height: 500px;
+    height: 700px;
+}
+
+.center-justify {
+    text-align: justify;
+    text-align-last: center;
 }

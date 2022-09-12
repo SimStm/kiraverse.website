@@ -23,7 +23,7 @@ const TopContent: FC = (props) => {
         <p className="mx-auto mt-3 max-w-md text-base sm:text-lg md:mt-5 md:max-w-3xl md:text-2xl text-xl font-bold uppercase">
           {subtitle}
         </p>
-        <div className="mx-auto mt-5 sm:w-1/3 sm:justify-center md:mt-5">
+        <div className="mx-auto mt-5 sm:w-1/3 sm:justify-center md:mt-5 mx-4 md:mx-auto">
           <div className="rounded-md shadow">
             <InputButton
               placeholder=""

@@ -2,7 +2,7 @@ import './index.css'
 import { FC, Fragment, useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import YouTubeEmbed from '../../../components/YoutubeEmbed'
-import Card from '../../../components/Card'
+import Card, { CardContent } from '../../../components/Card'
 import WindowsLogo from '../../../assets/images/Windows-Logo-White.png'
 
 const WhatIs: FC = (props) => {
@@ -20,6 +20,12 @@ const WhatIs: FC = (props) => {
     { title: 'Elimination', content: '1v1 up to 10v10' }
   ]
 
+  const contentBigCard = [
+    { title: 'Free Extension', content: 'Play for fun in our various Battle Royale modes.' },
+    { title: 'Wager Extension', content: 'Survive to win cash prizes! Play competitive, dictating your own risk using our Pools structure.' },
+    { title: 'Earn Per Kill Extension', content: 'Nonstop Action! Each kill equals more money! Respawn forever in this endless battle mode.' }
+  ]
+
   return (
     <main className="mx-auto max-w-8xl py-20 bg-whatis relative align-top">
       <div className="whatis-white-bar absolute bottom-0 left-12 hidden md:block"></div>
@@ -35,13 +41,29 @@ const WhatIs: FC = (props) => {
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
             {contentCards.map((item, index) => (
-              <Card key={index} title={item.title}>{item.content}</Card>
+              <Card key={index} title={item.title}>
+                {item.content}
+              </Card>
             ))}
           </div>
         </div>
         <div className="text-right md:col-span-3 mt-8 md:mt-0">
-          <img src={WindowsLogo} title="Windows" className="w-1/5 float-right mb-4" />
+          <img
+            src={WindowsLogo}
+            title="Windows"
+            className="w-1/5 float-right mb-4"
+          />
           <YouTubeEmbed youtubeId="1ErlFCB1z44" extraClassName="clear-both" />
+        </div>
+        <div className="md:col-span-5 mt-8 space-y-4 text-center md:text-left">
+          <h1 className="text-2xl font-bold">Each mode will have three playable extensions:</h1>
+          <Card>
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-4 space-y-10 md:space-y-0">
+              {contentBigCard.map((item, index) => 
+                <CardContent key={index} title={item.title} centerType="all">{item.content}</CardContent>
+              )}
+            </div>
+          </Card>
         </div>
       </div>
     </main>

@@ -45,23 +45,20 @@ const KiraNFTs: FC = (props) => {
   ]
 
   return (
-    <main className="mx-auto max-w-8xl bg-kiranfts py-20 space-y-60">
+    <main className="mx-auto max-w-8xl bg-kiranfts py-20 space-y-10 md:space-y-60">
       <div className="bg-indigo">
         <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold font-kusanagi tracking-tight text-white sm:text-4xl">
             <span className="block pink-text-shadow">KIRA NFTS</span>
           </h2>
-          <p className="text-xs">
-            <br></br>
-          </p>
-          <hr></hr>
-          <p className="mt-4 text-lg text-sm leading-6 text-indigo-200">
+          <hr className="my-4" />
+          <p className="text-lg text-sm leading-6 text-indigo-200">
             <ReactMarkdown>{content}</ReactMarkdown>
           </p>
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 mx-12 md:mx-36">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-4 mx-12 md:mx-36">
         {contentCards.map((item, index) => (
           <Card
             key={index}
